@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Basketball Scoreboard</title>
+    <script defer src="script.js"></script>
+  </head>
+  <body>
+    <div class="main">
+      <div class="container">
+        <div class="flex-item">
+          <h1 class="team">HOME</h1>
+          <p class="leader leader-home"></p>
+          <div class="score-container">
+            <span class="score home-score">0</span>
+          </div>
+          <div class="points-container">
+            <button class="btn add-point add1-home">+1</button
+            ><button class="btn add-point add2-home">+2</button
+            ><button class="btn add-point add3-home">+3</button>
+          </div>
+        </div>
+
+        <div class="flex-item">
+          <h1 class="team">GUEST</h1>
+          <p class="leader leader-guest"></p>
+          <div class="score-container">
+            <p class="score guest-score">0</p>
+          </div>
+          <div class="points-container">
+            <button class="btn add-point add1-guest">+1</button
+            ><button class="btn add-point add2-guest">+2</button
+            ><button class="btn add-point add3-guest">+3</button>
+          </div>
+        </div>
+      </div>
+      <div class="new-container">
+        <button class="btn new-game">NEW GAME</button>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,115 @@
+@font-face {
+  font-family: 'CursedTimer';
+  src: url(CursedTimerUlil-Aznm.ttf);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: #eee;
+  background-color: #1b244a;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 150px;
+  height: 480px;
+  padding-top: 50px;
+  margin-bottom: 20px;
+}
+
+.flex-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.team {
+  font-size: 80px;
+  line-height: 36px;
+  margin-bottom: 50px;
+}
+
+.leader {
+  margin-bottom: 20px;
+  font-family: 'CursedTimer';
+  font-size: 20px;
+  color: #f8c630;
+}
+
+.leader::after {
+  content: '.';
+  visibility: hidden;
+  font-size: 0px;
+}
+
+.score-container {
+  width: 320px;
+  height: 220px;
+  background-color: #080001;
+  border-radius: 5px;
+  margin-bottom: 50px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  /* position: relative; */
+}
+
+.score {
+  font-family: 'CursedTimer';
+  font-size: 170px;
+  line-height: 127px;
+  color: #f94f6d;
+
+  /* position: absolute;
+  width: 117px;
+  height: 120px;
+  left: 103px;
+  top: 45px; */
+}
+
+.points-container {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+}
+
+.add-point {
+  width: 60px;
+  height: 60px;
+}
+
+.btn {
+  border: 3px solid #9aabd8;
+  border-radius: 5px;
+  background-color: inherit;
+  color: #9aabd8;
+  font-family: 'CursedTimer';
+  font-size: 25px;
+  cursor: pointer;
+}
+
+.new-container {
+  display: flex;
+  justify-content: center;
+}
+
+.new-game {
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 30px;
+  padding: 10px 30px;
+}
