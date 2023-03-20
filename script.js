@@ -28,8 +28,12 @@ const refreshGuestScore = function () {
 const leader = function () {
   console.log(homePoints);
   if (homePoints > guestPoints) {
+    leaderHome.textContent = '';
+    leaderGuest.textContent = '';
     leaderHome.textContent = 'L E A D E R';
   } else if (homePoints < guestPoints) {
+    leaderHome.textContent = '';
+    leaderGuest.textContent = '';
     leaderGuest.textContent = 'L E A D E R';
   } else if (homePoints === guestPoints) {
     leaderHome.textContent = '';
